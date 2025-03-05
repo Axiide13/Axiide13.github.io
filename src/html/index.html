@@ -1,42 +1,29 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        <title>github.com/Axiide13.github.io</title>
-        <link rel="stylesheet" href="src/styles/styles.css">
-        <link rel="icon" type="image/x-icon" href="assets/icons/github-mark.png">
-    </head>
-
+<html lang="ru">
+    @@include('blocks/head.html')
     <body class="body">
-        <header class="page-header">
-            <div class="page-header__container">
-                <a href="#" class="page-header__logo">
-                    <svg class="page-header__logo-icon" width="202" height="147">
-                      <use xlink:href="assets/icons/symbols.svg#logo"></use>
-                    </svg>
-                  </a>
-                <nav class="page-header__nav">
-                    <a href="#" class="page-header__nav-link">Меропрития</a>
-                    <a href="#" class="page-header__nav-link">Блог</a>
-                    <a href="#" class="page-header__nav-link">О нас</a>
-                    <a href="#" class="page-header__nav-link">Контакты</a>
-                </nav>
-                <div class="page-header__right-block">
-                    <a href="#" class="page-header__btn btn">Войти</a>
-                    <a href="#" class="page-header__name">Павел В.</a>
-                    <a href="#" class="page-header__logout">
-                        <!-- svg here -->
-                    </a>
-                </div>
-            </div>
-        </header>
+        @@include('blocks/page-header.html')
         <main class="main">
-            main
+            @@include('blocks/main-page/main-header.html')
+            @@include('blocks/offers.html')
+            @@include('blocks/main-page/about.html')
+            @@include('blocks/main-page/upcoming.html')
+            @@include('blocks/main-page/blog.html')
+            @@include('blocks/main-page/contacts.html')
+            @@include('blocks/main-page/text-bg.html')
         </main>
-        <footer class="page-footer">
-            footer
-        </footer>
+        @@include('blocks/page-footer.html')
+        @@include('blocks/event-pp.html')
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="scripts/jquery.selectric.min.js"></script>
+        <script src="scripts/jquery.mask.min.js"></script>
+        <script src="scripts/jquery.validate.js"></script>
+        <script src="scripts/jquery.validate-init.js"></script>
+        <script src="scripts/air-datepicker.js"></script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp4vi-l8u895Qil7okfCSiGU9RMvgv5Dk"></script>
+        <script src="scripts/swiper.js"></script>
+        <script src="scripts/main.min.js"></script>
     </body>
 </html>
